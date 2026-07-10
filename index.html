@@ -5,336 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bayo Oliva | Private Boxing Coach</title>
+    <title>Bayo Oliva | Language Redirect</title>
 
     <meta
         name="description"
-        content="Private boxing lessons in Oaxaca, Mexico with Bayo Oliva. Personalized boxing training for technique, conditioning, mindset and real boxing."
+        content="Choose your language for Bayo Oliva private boxing classes."
     >
 
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
-
-    <link rel="stylesheet" href="css/style.css?v=7">
+    <link rel="alternate" hreflang="en" href="en/">
+    <link rel="alternate" hreflang="es" href="es/">
+    <link rel="alternate" hreflang="x-default" href="en/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <script>
+        const language = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        const target = language.startsWith('es') ? 'es/' : 'en/';
+        window.location.replace(target);
+    </script>
+
+    <style>
+        :root {
+            --primary:#C7F000;
+            --black:#030303;
+            --white:#ffffff;
+            --muted:#bdbdbd;
+        }
+
+        * {
+            box-sizing:border-box;
+        }
+
+        body {
+            min-height:100vh;
+            margin:0;
+            display:grid;
+            place-items:center;
+            padding:32px;
+            background:var(--black);
+            color:var(--white);
+            font-family:Arial, sans-serif;
+            text-align:center;
+        }
+
+        h1 {
+            margin:0 0 12px;
+            font-size:2rem;
+            text-transform:uppercase;
+        }
+
+        p {
+            margin:0 0 24px;
+            color:var(--muted);
+        }
+
+        a {
+            display:inline-flex;
+            margin:6px;
+            padding:14px 22px;
+            background:var(--primary);
+            color:#050505;
+            font-weight:800;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+    </style>
 
 </head>
 <body>
 
-    <header class="navbar">
-
-        <a href="#home" class="logo" aria-label="Bayo Oliva home">
-            <span class="logo-mark">BAYO</span>
-            <span class="logo-name">OLIVA</span>
-        </a>
-
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#classes">Private Classes</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a
-            href="https://wa.me/529515001272"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-primary nav-cta"
-        >
-            Book a Class
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
-
-    </header>
-
     <main>
-
-        <section id="home" class="hero">
-
-            <div class="hero-media" aria-hidden="true">
-                <img src="assets/hero/hero.jpg" alt="">
-            </div>
-
-            <div class="hero-content">
-
-                <p class="eyebrow">Private Boxing</p>
-
-                <h1>
-                    Train Like
-                    <span>A Champion.</span>
-                    <strong>Feel Like Your Best.</strong>
-                </h1>
-
-                <p class="description">
-                    Professional boxing lessons in Oaxaca, Mexico for foreigners.
-                    Personalized. Effective. Real.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="https://wa.me/529515001272"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn-primary"
-                    >
-                        Book a Class
-                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="#classes" class="btn-video">
-                        <span>
-                            <i class="fa-solid fa-play" aria-hidden="true"></i>
-                        </span>
-                        View Classes
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-signature">
-                <span>Bayo</span>
-                <p>Abraham "Bayo" Oliva Mejia</p>
-                <strong>Professional Boxer</strong>
-            </div>
-
-        </section>
-
-        <section id="about" class="about section-split">
-
-            <div class="about-image">
-                <img
-                    src="assets/about/about.jpg"
-                    alt="Bayo Oliva coaching a private boxing class"
-                    loading="lazy"
-                >
-            </div>
-
-            <div class="about-content">
-
-                <p class="eyebrow">Who I Am</p>
-
-                <h2>Abraham "Bayo" Oliva</h2>
-
-                <p>
-                    Professional boxer with 14+ years of experience inside the ring.
-                    From amateur championships to pro fights, boxing has shaped my
-                    life and now I help others discover their strength, discipline
-                    and confidence through it.
-                </p>
-
-                <div id="experience" class="stats">
-
-                    <div class="stat">
-                        <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
-                        <h3>14+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-
-                    <div class="stat">
-                        <i class="fa-solid fa-trophy" aria-hidden="true"></i>
-                        <h3>200+</h3>
-                        <p>Amateur Fights</p>
-                    </div>
-
-                    <div class="stat">
-                        <i class="fa-solid fa-medal" aria-hidden="true"></i>
-                        <h3>10+</h3>
-                        <p>Professional Fights</p>
-                    </div>
-
-                    <div class="stat">
-                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                        <h3>INTL</h3>
-                        <p>Experience</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="classes" class="classes">
-
-            <p class="eyebrow">Private Classes</p>
-            <h2>100% Personalized Training</h2>
-            <p class="section-copy">
-                One-on-one boxing classes adapted to your level, goals and schedule.
-                All you need is the will. I will take care of the rest.
-            </p>
-
-            <div class="cards">
-
-                <article class="card">
-                    <img
-                        src="assets/classes/technique.jpg"
-                        alt="Boxing coach teaching technique in front of a mirror"
-                        loading="lazy"
-                    >
-                    <div class="card-body">
-                        <span class="card-icon">
-                            <i class="fa-solid fa-hand-fist" aria-hidden="true"></i>
-                        </span>
-                        <h3>Technique</h3>
-                        <p>Learn the fundamentals or perfect your skills.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img
-                        src="assets/classes/conditioning.jpg"
-                        alt="Boxer doing conditioning drills with gloves"
-                        loading="lazy"
-                    >
-                    <div class="card-body">
-                        <span class="card-icon">
-                            <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
-                        </span>
-                        <h3>Conditioning</h3>
-                        <p>Improve endurance, strength and agility.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img
-                        src="assets/classes/mindset.jpg"
-                        alt="Boxer focused before striking the heavy bag"
-                        loading="lazy"
-                    >
-                    <div class="card-body">
-                        <span class="card-icon">
-                            <i class="fa-solid fa-brain" aria-hidden="true"></i>
-                        </span>
-                        <h3>Mental Toughness</h3>
-                        <p>Build discipline, focus and unshakable confidence.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img
-                        src="assets/classes/sparring.jpg"
-                        alt="Two boxers practicing sparring drills"
-                        loading="lazy"
-                    >
-                    <div class="card-body">
-                        <span class="card-icon">
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
-                        </span>
-                        <h3>Real Boxing</h3>
-                        <p>Train like a boxer. Feel like a champion.</p>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section id="testimonials" class="testimonials">
-
-            <p class="eyebrow">Testimonials</p>
-            <h2>What My Clients Say</h2>
-
-            <div class="testimonial-grid">
-
-                <blockquote class="testimonial">
-                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-                    <p>
-                        Bayo is an amazing coach. His energy, knowledge and attention
-                        to detail took my boxing to the next level.
-                    </p>
-                    <footer>
-                        <span>J</span>
-                        <strong>James, USA</strong>
-                    </footer>
-                </blockquote>
-
-                <blockquote class="testimonial">
-                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-                    <p>
-                        The best boxing experience I had in Mexico. Professional,
-                        motivating and super focused on you.
-                    </p>
-                    <footer>
-                        <span>T</span>
-                        <strong>Tom, Canada</strong>
-                    </footer>
-                </blockquote>
-
-                <blockquote class="testimonial">
-                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
-                    <p>
-                        I came for a month and ended up staying. Every session was
-                        different, challenging and so much fun.
-                    </p>
-                    <footer>
-                        <span>L</span>
-                        <strong>Lucas, UK</strong>
-                    </footer>
-                </blockquote>
-
-            </div>
-
-        </section>
-
+        <h1>Bayo Oliva</h1>
+        <p>Select your language / Selecciona tu idioma</p>
+        <a href="en/">English</a>
+        <a href="es/">Español</a>
     </main>
-
-    <footer id="contact" class="contact">
-
-        <a
-            href="https://www.instagram.com/el_bayo.oliva?igsh=MTJpazhqOWhmYXdpaw=="
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            @el_bayo.oliva
-        </a>
-
-        <a
-            href="https://wa.me/529515001272"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            +52 951 500 1272
-        </a>
-
-        <span>
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            Oaxaca, Mexico
-        </span>
-
-        <a
-            href="https://wa.me/529515001272"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-primary"
-        >
-            Book a Class
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
-
-    </footer>
-
-    <a
-        href="https://wa.me/529515001272"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="whatsapp-float"
-        aria-label="Contact by WhatsApp"
-    >
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-
-    <script src="js/main.js"></script>
 
 </body>
 </html>
