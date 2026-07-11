@@ -219,7 +219,7 @@ nav a:focus-visible::after{
 }
 
 .eyebrow{
-    margin-bottom:12px;
+    margin:0 0 12px;
     color:var(--primary);
     font-family:'Bebas Neue',sans-serif;
     font-size:1.22rem;
@@ -236,6 +236,7 @@ section h2{
 }
 
 .hero-title{
+    margin:0;
     font-size:clamp(3.8rem, 7vw, 7.2rem);
     max-width:690px;
     text-shadow:0 8px 35px rgba(0,0,0,.85);
