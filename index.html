@@ -1,84 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bayo Oliva | Language Redirect</title>
+    <title>Bayo Oliva | Entrenador Privado de Boxeo</title>
 
     <meta
         name="description"
-        content="Choose your language for Bayo Oliva private boxing classes."
+        content="Clases privadas de boxeo en Oaxaca, México con Bayo Oliva. Entrenamiento personalizado de técnica, condición, mentalidad y boxeo real."
     >
 
-    <link rel="alternate" hreflang="en" href="en/">
-    <link rel="alternate" hreflang="es" href="es/">
-    <link rel="alternate" hreflang="x-default" href="en/">
+    <link rel="canonical" href="https://www.bayocoach.com/">
+    <link rel="alternate" hreflang="es" href="https://www.bayocoach.com/">
+    <link rel="alternate" hreflang="en" href="https://www.bayocoach.com/en/">
+    <link rel="alternate" hreflang="x-default" href="https://www.bayocoach.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:title" content="Bayo Oliva | Entrenador Privado de Boxeo">
+    <meta
+        property="og:description"
+        content="Clases privadas de boxeo en Oaxaca, México con Bayo Oliva. Entrenamiento personalizado para técnica, condición, mentalidad y boxeo real."
+    >
+    <meta property="og:url" content="https://www.bayocoach.com/">
+    <meta property="og:image" content="https://www.bayocoach.com/assets/hero/hero.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bayo Oliva | Entrenador Privado de Boxeo">
+    <meta
+        name="twitter:description"
+        content="Clases privadas de boxeo en Oaxaca, México con Bayo Oliva. Entrenamiento personalizado para técnica, condición, mentalidad y boxeo real."
+    >
+    <meta name="twitter:image" content="https://www.bayocoach.com/assets/hero/hero.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/style.css?v=11">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-    <script>
-        const language = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-        const target = language.startsWith('es') ? 'es/' : 'en/';
-        window.location.replace(target);
-    </script>
-
-    <style>
-        :root {
-            --primary:#C7F000;
-            --black:#030303;
-            --white:#ffffff;
-            --muted:#bdbdbd;
-        }
-
-        * {
-            box-sizing:border-box;
-        }
-
-        body {
-            min-height:100vh;
-            margin:0;
-            display:grid;
-            place-items:center;
-            padding:32px;
-            background:var(--black);
-            color:var(--white);
-            font-family:Arial, sans-serif;
-            text-align:center;
-        }
-
-        h1 {
-            margin:0 0 12px;
-            font-size:2rem;
-            text-transform:uppercase;
-        }
-
-        p {
-            margin:0 0 24px;
-            color:var(--muted);
-        }
-
-        a {
-            display:inline-flex;
-            margin:6px;
-            padding:14px 22px;
-            background:var(--primary);
-            color:#050505;
-            font-weight:800;
-            text-decoration:none;
-            text-transform:uppercase;
-        }
-    </style>
 
 </head>
 <body>
 
+    <header class="navbar">
+
+        <a href="#home" class="logo" aria-label="Inicio de Bayo Oliva">
+            <span class="logo-mark">BAYO</span>
+            <span class="logo-name">OLIVA</span>
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#classes">Clases Privadas</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a
+            href="https://www.bayocoach.com/en/"
+            class="btn-primary nav-cta"
+            aria-label="Ver sitio en inglés"
+        >
+            English
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+    </header>
+
     <main>
-        <h1>Bayo Oliva</h1>
-        <p>Select your language / Selecciona tu idioma</p>
-        <a href="en/">English</a>
-        <a href="es/">Español</a>
+
+        <section id="home" class="hero">
+
+            <div class="hero-media" aria-hidden="true">
+                <img src="assets/hero/hero.jpg" alt="">
+            </div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">Boxeo Privado</p>
+
+                <h1>
+                    Entrena Como
+                    <span>Un Campeón.</span>
+                    <strong>Siente Tu Mejor Nivel.</strong>
+                </h1>
+
+                <p class="description">
+                    Clases profesionales de boxeo en Oaxaca, México para personas de cualquier nivel.
+                    Personalizado. Efectivo. Real.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="https://wa.me/529515001272?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20clases%20privadas%20de%20boxeo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn-primary"
+                    >
+                        Agenda Clase
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#classes" class="btn-video">
+                        <span>
+                            <i class="fa-solid fa-play" aria-hidden="true"></i>
+                        </span>
+                        Ver Clases
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-signature">
+                <span>Bayo</span>
+                <p>Abraham "Bayo" Oliva Mejia</p>
+                <strong>Boxeador Profesional</strong>
+            </div>
+
+        </section>
+
+        <section id="about" class="about section-split">
+
+            <div class="about-image">
+                <img
+                    src="assets/about/about.jpg"
+                    alt="Bayo Oliva dirigiendo una clase privada de boxeo"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">Quién Soy</p>
+
+                <h2>Abraham "Bayo" Oliva</h2>
+
+                <p>
+                    Boxeador profesional con más de 14 años de experiencia dentro del ring.
+                    Desde campeonatos amateur hasta peleas profesionales, el boxeo ha formado mi
+                    vida y ahora ayudo a otros a descubrir su fuerza, disciplina
+                    y confianza a través de él.
+                </p>
+
+                <div id="experience" class="stats">
+
+                    <div class="stat">
+                        <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
+                        <h3>14+</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                        <h3>200+</h3>
+                        <p>Peleas Amateur</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                        <h3>10+</h3>
+                        <p>Peleas Profesionales</p>
+                    </div>
+
+                    <div class="stat">
+                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        <h3>INT.</h3>
+                        <p>Experiencia</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="classes" class="classes">
+
+            <p class="eyebrow">Clases Privadas</p>
+            <h2>Entrenamiento 100% Personalizado</h2>
+            <p class="section-copy">
+                Clases uno a uno adaptadas a tu nivel, objetivos y horario.
+                Solo necesitas las ganas. Yo me encargo del resto.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <img
+                        src="assets/classes/technique.jpg"
+                        alt="Entrenador de boxeo enseñando técnica frente a un espejo"
+                        loading="lazy"
+                    >
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-hand-fist" aria-hidden="true"></i>
+                        </span>
+                        <h3>Técnica</h3>
+                        <p>Aprende los fundamentos o perfecciona tus habilidades.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="assets/classes/conditioning.jpg"
+                        alt="Boxeador haciendo ejercicios de condición con guantes"
+                        loading="lazy"
+                    >
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                        </span>
+                        <h3>Condición</h3>
+                        <p>Mejora resistencia, fuerza y agilidad.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="assets/classes/mindset.jpg"
+                        alt="Boxeador concentrado antes de golpear el costal"
+                        loading="lazy"
+                    >
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                        </span>
+                        <h3>Fortaleza Mental</h3>
+                        <p>Construye disciplina, enfoque y confianza firme.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="assets/classes/sparring.jpg"
+                        alt="Dos boxeadores practicando ejercicios de sparring"
+                        loading="lazy"
+                    >
+                    <div class="card-body">
+                        <span class="card-icon">
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </span>
+                        <h3>Boxeo Real</h3>
+                        <p>Entrena como boxeador. Siéntete campeón.</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="testimonials" class="testimonials">
+
+            <p class="eyebrow">Testimonios</p>
+            <h2>Lo Que Dicen Mis Clientes</h2>
+
+            <div class="testimonial-grid">
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Entrenar con Bayo me ayudó a corregir detalles que nunca había
+                        notado. Es exigente, claro y te motiva desde el primer round.
+                    </p>
+                    <footer>
+                        <span>C</span>
+                        <strong>Carlos, CDMX</strong>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        La clase fue totalmente personalizada. Trabajamos técnica,
+                        condición y confianza sin perder el ritmo ni la energía.
+                    </p>
+                    <footer>
+                        <span>M</span>
+                        <strong>Mariana, Guadalajara</strong>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Yo venía desde cero y Bayo tuvo mucha paciencia. Aprendí base,
+                        defensa y combinaciones sin sentirme intimidado.
+                    </p>
+                    <footer>
+                        <span>J</span>
+                        <strong>Jorge, Puebla</strong>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Se nota la experiencia profesional. Cada ejercicio tiene un
+                        objetivo y terminas cansado, pero con ganas de volver.
+                    </p>
+                    <footer>
+                        <span>A</span>
+                        <strong>Ana, Monterrey</strong>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Me ayudó muchísimo con mi postura y mi resistencia. La energía
+                        de la clase es seria, pero también muy humana.
+                    </p>
+                    <footer>
+                        <span>L</span>
+                        <strong>Luis, Oaxaca</strong>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                    <p>
+                        Si buscas boxeo real y no una clase genérica de gimnasio, esta
+                        es la experiencia. Bayo te corrige y te impulsa.
+                    </p>
+                    <footer>
+                        <span>V</span>
+                        <strong>Valeria, Querétaro</strong>
+                    </footer>
+                </blockquote>
+
+            </div>
+
+        </section>
+
     </main>
+
+    <footer id="contact" class="contact">
+
+        <a
+            href="https://www.instagram.com/el_bayo.oliva?igsh=MTJpazhqOWhmYXdpaw=="
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            @el_bayo.oliva
+        </a>
+
+        <a
+            href="https://wa.me/529515001272?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20clases%20privadas%20de%20boxeo"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            +52 951 500 1272
+        </a>
+
+        <span>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Oaxaca, México
+        </span>
+
+        <a
+            href="https://wa.me/529515001272?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20clases%20privadas%20de%20boxeo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+        >
+            Agenda Clase
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+    </footer>
+
+    <a
+        href="https://wa.me/529515001272?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20las%20clases%20privadas%20de%20boxeo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-float"
+        aria-label="Contactar por WhatsApp"
+    >
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
