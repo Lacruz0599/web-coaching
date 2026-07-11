@@ -227,7 +227,7 @@ nav a:focus-visible::after{
     text-transform:uppercase;
 }
 
-.hero h1,
+.hero-title,
 section h2{
     font-family:'Anton',sans-serif;
     line-height:.94;
@@ -235,23 +235,23 @@ section h2{
     text-transform:uppercase;
 }
 
-.hero h1{
+.hero-title{
     font-size:clamp(3.8rem, 7vw, 7.2rem);
     max-width:690px;
     text-shadow:0 8px 35px rgba(0,0,0,.85);
 }
 
-.hero h1 span,
-.hero h1 strong{
+.hero-title span,
+.hero-title strong{
     display:block;
 }
 
-.hero h1 strong{
+.hero-title strong{
     position:relative;
     color:var(--primary);
 }
 
-.hero h1 strong::after{
+.hero-title strong::after{
     content:"";
     display:block;
     width:210px;
@@ -802,13 +802,13 @@ section h2{
         letter-spacing:4px;
     }
 
-    .hero h1{
+    .hero-title{
         font-size:clamp(4.05rem, 15.8vw, 5.25rem);
         max-width:680px;
         line-height:.98;
     }
 
-    .hero h1 strong::after{
+    .hero-title strong::after{
         width:280px;
         height:7px;
         margin-top:18px;
@@ -1087,7 +1087,7 @@ section h2{
         padding-right:5%;
     }
 
-    .hero h1{
+    .hero-title{
         font-size:clamp(3.18rem, 15.4vw, 4.15rem);
     }
 
